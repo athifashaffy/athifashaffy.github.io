@@ -1,6 +1,6 @@
-# Athif Shaffy — Portfolio
+# Athif Shaffy, Portfolio
 
-A fast, self-contained single-page portfolio (plain HTML/CSS/JS — no build step).
+A fast, self-contained single-page portfolio (plain HTML/CSS/JS, no build step).
 Inspired by the structure of the original Start Bootstrap portfolio, rebuilt with a
 modern dark theme.
 
