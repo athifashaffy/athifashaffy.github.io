@@ -20,8 +20,9 @@ python3 -m http.server 8000
 ## Customize
 - Text/sections: `index.html`
 - Colors, spacing, fonts: CSS variables at the top of `css/style.css` (`:root`)
-- Behavior (nav, scroll reveal): `js/main.js`
+- Behavior (nav, scroll reveal, project filter): `js/main.js`
 
-## TODO before publishing
-- Replace the LinkedIn `href="https://www.linkedin.com/"` with your profile URL.
-- Replace the contact email `hello@example.com` with your real address.
+## Adding a project
+Copy an `<article class="project">` block in the `#projectGrid` section and set
+`data-cat` to one or more of: `health`, `ai`, `drones`, `industrial`, `apps`.
+The filter buttons in `#projectFilters` match against those tokens.

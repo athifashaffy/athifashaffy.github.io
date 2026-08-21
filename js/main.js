@@ -15,9 +15,25 @@ links.querySelectorAll("a").forEach((a) =>
   a.addEventListener("click", () => links.classList.remove("open"))
 );
 
+// Project category filter
+const filterBar = document.getElementById("projectFilters");
+const projectCards = document.querySelectorAll("#projectGrid .project");
+filterBar.addEventListener("click", (e) => {
+  const btn = e.target.closest(".filter");
+  if (!btn) return;
+  filterBar
+    .querySelectorAll(".filter")
+    .forEach((b) => b.classList.toggle("is-active", b === btn));
+  const cat = btn.dataset.filter;
+  projectCards.forEach((card) => {
+    const cats = card.dataset.cat.split(" ");
+    card.hidden = cat !== "all" && !cats.includes(cat);
+  });
+});
+
 // Reveal on scroll
 const revealEls = document.querySelectorAll(
-  ".section__title, .section__kicker, .card, .project, .fact, .timeline li, .awards li, .about__text, .community__lead, .community__goal, .contact__lead, .contact__links"
+  ".section__title, .section__kicker, .card, .project, .fact, .timeline li, .awards li, .about__text, .contact__lead, .contact__links"
 );
 revealEls.forEach((el) => el.classList.add("reveal"));
 
