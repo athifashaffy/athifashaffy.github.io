@@ -120,9 +120,9 @@
           <p>Fully autonomous UAV agents for GPS-denied, communication-denied operation, plus a win at the Côté Gold Drone Innovation Challenge.</p>
         </article>
         <article class="card">
-          <div class="card__icon">⚙️</div>
-          <h3>Industrial &amp; mining technology</h3>
-          <p>Production industrial software: mesh-radio network management, machine telemetry, real-time data pipelines, and edge computing for harsh environments.</p>
+          <div class="card__icon">📱</div>
+          <h3>End-to-end product delivery</h3>
+          <p>Shipping complete platforms rather than pieces: mobile apps, backend APIs, and admin dashboards, taken from first commit to the App Store and Play Store.</p>
         </article>
         <article class="card">
           <div class="card__icon">👨‍🏫</div>
@@ -149,13 +149,12 @@
         <button class="filter" data-filter="health">Health-tech</button>
         <button class="filter" data-filter="ai">AI &amp; ML</button>
         <button class="filter" data-filter="drones">Drones &amp; Autonomy</button>
-        <button class="filter" data-filter="industrial">Industrial &amp; IoT</button>
         <button class="filter" data-filter="apps">Apps &amp; Web</button>
       </div>
 
       <div class="projects" id="projectGrid">
 
-        <article class="project" data-cat="ai health industrial apps drones">
+        <article class="project" data-cat="ai health apps drones">
           <div class="project__head">
             <h3>The Alpha Nova Inc.</h3>
             <span class="project__tag">Company</span>
@@ -255,51 +254,7 @@
           </ul>
         </article>
 
-        <article class="project" data-cat="ai">
-          <div class="project__head">
-            <h3>MIB Offline Document Pipeline</h3>
-            <span class="project__tag">Document AI</span>
-          </div>
-          <p>An air-gapped document-processing pipeline for the 8090 MIB Doc Challenge: it reads directories of PDF case packets, extracts each applicant record, and adjudicates the case with a calibrated confidence. Entirely offline on CPU with no LLMs, including an injection-proof extractor that quarantines hidden text (white-on-white, alpha-0, sub-3pt, off-cropbox), a two-pass Tesseract OCR ladder, an evidence-precedence resolver, and a policy engine mined from training labels.</p>
-          <ul class="chips">
-            <li>Python</li><li>OCR</li><li>Prompt-injection defense</li><li>Decision theory</li><li>Docker</li>
-          </ul>
-        </article>
-
-        <article class="project" data-cat="industrial">
-          <div class="project__head">
-            <h3>Com-Linx NMS</h3>
-            <span class="project__tag">Industrial</span>
-          </div>
-          <p>A network management system for MaxLinear MoCA 2.5 bridges and Rajant mesh radios deployed underground. Real-time device polling, topology visualization, alerting, and a live React dashboard over Socket.io, backed by Node.js and MongoDB.</p>
-          <ul class="chips">
-            <li>React 18</li><li>Node.js</li><li>MongoDB</li><li>Socket.io</li><li>MoCA 2.5</li><li>Rajant mesh</li>
-          </ul>
-        </article>
-
-        <article class="project" data-cat="industrial">
-          <div class="project__head">
-            <h3>Industrial IoT &amp; Mining Tech</h3>
-            <span class="project__tag">Industrial</span>
-          </div>
-          <p>Production industrial software and IoT systems for the mining sector: industrial dashboards, machine telemetry, real-time data pipelines, environmental monitoring, edge computing, and operational visibility.</p>
-          <ul class="chips">
-            <li>MQTT</li><li>Modbus</li><li>OPC UA</li><li>Telemetry</li><li>Edge computing</li><li>Dashboards</li>
-          </ul>
-        </article>
-
-        <article class="project" data-cat="industrial ai">
-          <div class="project__head">
-            <h3>Vanguardian Fall Detector</h3>
-            <span class="project__tag">Safety-tech</span>
-          </div>
-          <p>A non-wearable, RF-based fall detection system for underground mining environments, improving worker safety without requiring anyone to carry or wear a device.</p>
-          <ul class="chips">
-            <li>RF sensing</li><li>Edge AI</li><li>Mining safety</li><li>Non-wearable</li>
-          </ul>
-        </article>
-
-        <article class="project" data-cat="apps industrial">
+        <article class="project" data-cat="apps">
           <div class="project__head">
             <h3>WheelIt Transportation</h3>
             <span class="project__tag">Mobility</span>
@@ -307,83 +262,6 @@
           <p>A full transportation platform: a React Native driver app, a rider-facing mobile app, a Node.js / Express / MongoDB backend API, and a React + Vite + Tailwind admin dashboard for dispatch and operations.</p>
           <ul class="chips">
             <li>React Native</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>React</li><li>Tailwind</li>
-          </ul>
-        </article>
-
-        <article class="project" data-cat="health apps">
-          <div class="project__head">
-            <h3>Carly — Care Ally</h3>
-            <span class="project__tag">Health-tech</span>
-          </div>
-          <p>An avatar-based behavioral activation companion. Instead of a task list, Carly is a continuously visible character who surfaces the user's most pressing unmet self-care need, and is cared for by dragging activity icons onto her. Includes a recurrence model per need, idle animation, and an offline-first garden that grows with every act of care.</p>
-          <ul class="chips">
-            <li>React 18</li><li>Vite</li><li>Behavioral activation</li><li>Offline-first</li><li>Animation</li>
-          </ul>
-        </article>
-
-        <article class="project" data-cat="health ai">
-          <div class="project__head">
-            <h3>SIGNA</h3>
-            <span class="project__tag">Remote Monitoring</span>
-          </div>
-          <p>A remote patient monitoring concept for depression and mental health, using passive sensing (sleep, activity, HRV, and behavioral signals) to track changes between clinical assessments.</p>
-          <ul class="chips">
-            <li>Passive sensing</li><li>HRV</li><li>Behavioral signals</li><li>Clinical support</li>
-          </ul>
-        </article>
-
-        <article class="project" data-cat="ai apps">
-          <div class="project__head">
-            <h3>FoundPair</h3>
-            <span class="project__tag">Product</span>
-          </div>
-          <p>A transparent cofounder compatibility and first-conversation tool, built for OpenAI Build Week 2026 in the Work &amp; Productivity track. It filters hard incompatibilities, ranks candidates across five explainable dimensions, shows the evidence and likely friction behind each match, and generates practical first-conversation questions.</p>
-          <ul class="chips">
-            <li>Decision support</li><li>Explainable ranking</li><li>Web app</li><li>Build Week 2026</li>
-          </ul>
-        </article>
-
-        <article class="project" data-cat="ai">
-          <div class="project__head">
-            <h3>Web Attack Detection (CIC-IDS2017)</h3>
-            <span class="project__tag">ML</span>
-          </div>
-          <p>An ML pipeline that detects web-based attacks (brute force, XSS, SQL injection) in CIC-IDS2017 network flows. Covers loading and cleaning the labeled flow data, variance / correlation / mutual-information feature analysis, baseline classifier training, and imbalance-aware evaluation.</p>
-          <ul class="chips">
-            <li>Python</li><li>scikit-learn</li><li>Feature analysis</li><li>Imbalanced data</li><li>Intrusion detection</li>
-          </ul>
-        </article>
-
-        <article class="project" data-cat="apps">
-          <div class="project__head">
-            <h3>Famify</h3>
-            <span class="project__tag">Apps</span>
-          </div>
-          <p>A family management platform with a React + Vite + TypeScript web app and a Flutter mobile app on Supabase: shared calendar, tasks, shopping lists, meal plans, a family feed, and a place-finder for family-friendly locations.</p>
-          <ul class="chips">
-            <li>React</li><li>TypeScript</li><li>Flutter</li><li>Supabase</li><li>Riverpod</li><li>Tailwind</li>
-          </ul>
-        </article>
-
-        <article class="project" data-cat="apps health">
-          <div class="project__head">
-            <h3>NapTap</h3>
-            <span class="project__tag">Apps</span>
-          </div>
-          <p>A one-tap power nap app in Flutter: distraction-free black screen, gradual wake-up alarm that ramps from 10% to 100% over 20 seconds, and a walk-to-dismiss alarm that requires ten real steps so you actually wake up. Tracks nap habits with weekly charts.</p>
-          <ul class="chips">
-            <li>Flutter</li><li>Pedometer</li><li>Background audio</li><li>iOS &amp; Android</li>
-          </ul>
-        </article>
-
-        <article class="project" data-cat="ai health">
-          <div class="project__head">
-            <h3>Wearables &amp; Depression Signals</h3>
-            <span class="project__tag">Research</span>
-          </div>
-          <p>Health-AI research work on wearable and passive-sensing datasets for depression signal detection: rolling-window feature families, cross-dataset transfer evaluation, and honest reporting of pilot-scale limits and confounders. Built for a 48-hour biotech / health AI hackathon on H100 infrastructure.</p>
-          <ul class="chips">
-            <li>Wearables</li><li>Feature engineering</li><li>Model transfer</li><li>PHQ-9</li><li>H100 / Nebius</li>
           </ul>
         </article>
 
