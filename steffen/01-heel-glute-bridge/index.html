@@ -13,7 +13,9 @@ body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,s
 main{max-width:1200px;margin:0 auto;display:grid;gap:20px}
 h1{font-size:1.5rem;margin:0}
 p{margin:0;color:var(--mute);max-width:70ch}
-.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:820px){.grid{grid-template-columns:1fr}h1{font-size:1.3rem}body{padding-block:16px}}
+@media (max-width:480px){table{font-size:.85rem}td,th{padding:6px}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;display:grid;gap:8px;align-content:start;min-width:0}
 .card h2{font-size:1rem;margin:0}
 .tag{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600}
@@ -28,7 +30,7 @@ th{color:var(--mute);font-weight:600}
 <main>
   <div>
     <h1>01 · Heel glute bridge</h1>
-    <p>Relatio's heel glute bridge, COGITO AI today, and the fixed COGITO AI version. The fixed one copies Relatio's movement, angle and speed: one rep every 4.4 s, the same as Relatio. The demonstration shows 3 reps and stops (Steffen, 29 Oct: "just show it 3 times").</p>
+    <p>Relatio's heel glute bridge next to COGITO AI's, shown by the Coach woman and the Coach man. COGITO AI copies Relatio's movement, angle and speed: one rep every 4.4 s, the same as Relatio. The demonstration shows 3 reps and stops (Steffen, 29 Oct: "just show it 3 times").</p>
   </div>
 
   <div class="grid">
@@ -39,19 +41,13 @@ th{color:var(--mute);font-weight:600}
       <p>Loops for about 45 s under a countdown. One rep = 4.4 s.</p>
     </div>
     <div class="card">
-      <span class="tag">COGITO AI today</span>
-      <h2>Glute bridge, Coach woman</h2>
-      <video src="cogito-now-woman.mp4" controls muted playsinline preload="metadata"></video>
-      <p>What the app shows now: COGITO's own flat-foot bridge from the side. 3 reps, 4.4 s each.</p>
-    </div>
-    <div class="card">
-      <span class="tag">COGITO AI fixed</span>
+      <span class="tag">COGITO AI</span>
       <h2>Heel glute bridge, Coach woman</h2>
       <video src="cogito-fixed-woman.mp4" controls muted playsinline preload="metadata"></video>
       <p>Relatio's movement and angle. 3 reps at Relatio's 4.4 s, then stops.</p>
     </div>
     <div class="card">
-      <span class="tag">COGITO AI fixed</span>
+      <span class="tag">COGITO AI</span>
       <h2>Heel glute bridge, Coach man</h2>
       <video src="cogito-fixed-man.mp4" controls muted playsinline preload="metadata"></video>
       <p>The same, with the Coach man.</p>
@@ -60,12 +56,12 @@ th{color:var(--mute);font-weight:600}
 
   <div class="card wrap">
     <table>
-      <tr><th></th><th>Relatio</th><th>COGITO AI today</th><th>COGITO AI fixed</th></tr>
-      <tr><td>Movement</td><td>Heel glute bridge</td><td>Glute bridge, flat feet</td><td>Heel glute bridge</td></tr>
-      <tr><td>Camera</td><td>Raised, from the side</td><td>Flat side view</td><td>Raised, from the side, like Relatio</td></tr>
-      <tr><td>One rep</td><td>4.4 s</td><td>4.4 s</td><td>4.4 s</td></tr>
-      <tr><td>What plays</td><td>Loops about 45 s, ×3 sets, 15 s rest</td><td>3 reps, then stops</td><td>3 reps (13 s), then stops</td></tr>
-      <tr><td>Sides</td><td colspan="3">Both legs work together, so nothing is mirrored</td></tr>
+      <tr><th></th><th>Relatio</th><th>COGITO AI</th></tr>
+      <tr><td>Movement</td><td>Heel glute bridge</td><td>Heel glute bridge</td></tr>
+      <tr><td>Camera</td><td>Raised, from the side</td><td>Raised, from the side, like Relatio</td></tr>
+      <tr><td>One rep</td><td>4.4 s</td><td>4.4 s</td></tr>
+      <tr><td>What plays</td><td>Loops about 45 s, ×3 sets, 15 s rest</td><td>3 reps (13 s), then stops</td></tr>
+      <tr><td>Sides</td><td colspan="2">Both legs work together, so nothing is mirrored</td></tr>
     </table>
   </div>
 </main>
