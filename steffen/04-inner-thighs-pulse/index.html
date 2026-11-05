@@ -19,7 +19,7 @@ p{margin:0;color:var(--mute);max-width:70ch}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;display:grid;gap:8px;align-content:start;min-width:0}
 .card h2{font-size:1rem;margin:0}
 .tag{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600}
-video{width:100%;border-radius:6px;background:#000;aspect-ratio:16/9}
+video{display:block;width:100%;max-width:100%;height:auto;border-radius:6px;background:#dbe7f7;aspect-ratio:16/9;object-fit:contain}
 table{border-collapse:collapse;width:100%;font-size:.95rem}
 td,th{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
 th{color:var(--mute);font-weight:600}
@@ -36,12 +36,12 @@ main{max-width:760px}
   </div>
   <div class="card">
     <span class="tag">Relatio</span>
-    <video src="https://app.getrelatio.com/storage/courses/10004/35.mp4" controls muted playsinline preload="metadata"></video>
+    <video src="https://app.getrelatio.com/storage/courses/10004/35.mp4" poster="poster-relatio.jpg" controls muted playsinline preload="none"></video>
     <p>Low side view. One rep = 3.76 s. The knees never fully close.</p>
   </div>
   <div class="card">
     <span class="tag">COGITO AI</span>
-    <video src="cogito-woman-inner-thighs.mp4" controls muted playsinline preload="metadata"></video>
+    <video src="cogito-woman-inner-thighs.mp4" poster="poster-cogito.jpg" controls muted playsinline preload="auto"></video>
     <p>3 reps of 3.75 s, then it stops. Both knees open and close together; the feet stay on the mat. She blinks every 4 seconds.</p>
   </div>
 </main>
