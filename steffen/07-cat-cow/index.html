@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>07 Cat-cow – Relatio vs COGITO AI</title>
+<style>
+:root{--bg:#f4f6f9;--card:#fff;--fg:#1d2430;--mute:#5d6878;--line:#dde3ea;--accent:#2f6fd6}
+@media (prefers-color-scheme:dark){:root{--bg:#11161d;--card:#1a212b;--fg:#e6ebf1;--mute:#9aa6b5;--line:#2a3440;--accent:#7aa8ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;padding-block:24px;padding-inline:16px}
+main{max-width:1200px;margin:0 auto;display:grid;gap:20px}
+h1{font-size:1.5rem;margin:0}
+p{margin:0;color:var(--mute);max-width:70ch}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:820px){.grid{grid-template-columns:1fr}h1{font-size:1.3rem}body{padding-block:16px}}
+@media (max-width:480px){table{font-size:.85rem}td,th{padding:6px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;display:grid;gap:8px;align-content:start;min-width:0}
+.card h2{font-size:1rem;margin:0}
+.tag{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600}
+video{width:100%;border-radius:6px;background:#000;aspect-ratio:16/9}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+td,th{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{color:var(--mute);font-weight:600}
+.wrap{overflow-x:auto}
+img{width:100%;height:auto;border-radius:6px;display:block}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.85rem;margin:0}
+summary{cursor:pointer;font-weight:600}
+h3{font-size:.9rem;margin:12px 0 4px}
+</style>
+</head>
+<body>
+<main>
+  <div>
+    <h1>07 · Cat-cow</h1>
+    <p>Relatio's cat-cow next to COGITO AI's, shown by the Coach woman. Raised three-quarter view from behind her left side.</p>
+    <p>Three repetitions, 5.3 s each, then it stops. Pauses at the cat peak and the cow peak.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <span class="tag">Relatio</span>
+      <h2>Cat-cow (Relatio clip)</h2>
+      <video src="https://app.getrelatio.com/storage/courses/10004/41.mp4" controls muted playsinline preload="metadata"></video>
+      <p>Relatio's reference clip.</p>
+    </div>
+    <div class="card">
+      <span class="tag">COGITO AI</span>
+      <h2>Cat-cow, Coach woman</h2>
+      <video src="cogito-woman-cat-cow.mp4" controls muted playsinline preload="metadata"></video>
+      <p>Raised three-quarter view from behind. 3 reps, then it stops.</p>
+    </div>
+  </div>
+  <div class="card wrap">
+    <table>
+      <tr><th></th><th>Relatio</th><th>COGITO AI</th></tr>
+      <tr><td>Movement</td><td>Cat-cow</td><td>Cat-cow</td></tr>
+      <tr><td>Shown by</td><td>Anatomy figure</td><td>Coach woman</td></tr>
+      <tr><td>Camera</td><td>Direct side view</td><td>Raised three-quarter, from behind her left side</td></tr>
+      <tr><td>One rep</td><td>~7 s</td><td>5.3 s (0.6× speed)</td></tr>
+      <tr><td>What plays</td><td>Loops under a countdown</td><td>3 reps (15.9 s), then stops</td></tr>
+      <tr><td>Sides</td><td colspan="2">Symmetric movement, nothing is mirrored</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <details><summary>Pictures and prompts</summary>
+      <p>Veo-generated halves (cat and cow) assembled into a full cycle. Keyframes drawn by Gemini from the start picture.</p>
+      <h3>Start picture</h3><img src="start.png" alt="Coach woman on all fours, back flat">
+      <h3>Peak A picture (cat)</h3><img src="peak-a.png" alt="Coach woman in cat pose, back rounded up">
+      <h3>Peak B picture (cow)</h3><img src="peak-b.png" alt="Coach woman in cow pose, back arched down">
+      <h3>Start picture prompt</h3><pre>Flat 2D cartoon illustration in exactly the style, line weight and colours of the reference image. Soft blue exercise mat on a plain pale blue background. No new colours, no text, no numbers, no logos, no other people, no props except what the movement needs. The person is the same athletic woman with the face, hair, skin tone and outfit of the reference image — keep every clothing colour and every hair detail exactly. Raised three-quarter view from behind her left side: she kneel on all fours on the mat, head toward the LEFT of the frame and feet toward the RIGHT, both hands flat under the shoulders with the fingers spread, hands open and empty, both knees under the hips and the tops of the feet flat on the mat. The back is flat like a table and the head is in line with the spine, looking down at the mat. The dark zip hoodie is zipped fully closed all the way up, with no bare skin visible at the waist or chest. The whole figure and the mat are visible with margin, centred in a 16:9 frame. Keep the face, hair, outfit and colours exactly as in the reference image.</pre>
+      <h3>Peak A prompt (cat)</h3><pre>Edit this image. Change only the person&#x27;s pose: cat: she round the whole back up toward the ceiling, the middle of the back the highest point, the tailbone tucked under. The head follows the spine and hangs in line with it, looking at the mat; the chin does NOT come to the chest. Hands and knees stay where they were, arms straight. The hoodie stays plain and closed, with no muscle lines and no bare skin at the waist. Every joint bends the way a real body can. The background, the mat, every object on it, the framing, and the person&#x27;s face, hair and clothes stay exactly where and as they are.</pre>
+      <h3>Peak B prompt (cow)</h3><pre>Edit this image. Change only the person&#x27;s pose: cow: she let the belly sink so the back dips gently down into a curve, the tailbone tilting up and the chest moving forward, the head lifted to look forward and slightly up. Hands and knees stay where they were, arms straight. Eyes open, face relaxed. The background, the mat, every object on it, the framing, and the person&#x27;s face, hair and clothes stay exactly where and as they are.</pre>
+    </details>
+  </div>
+</main>
+</body>
+</html>
