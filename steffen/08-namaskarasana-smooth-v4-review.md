@@ -1,3 +1,5 @@
+**Approval update — 14 November 2026:** Athif confirmed this exact smooth-v4 version approved. The video and comparison are preserved unchanged. The production notes below were written before that approval.
+
 # 08 · Namaskarasana · Smooth motion
 
 14 November 2026. Ready for review; Jana and Steffen approval pending.
