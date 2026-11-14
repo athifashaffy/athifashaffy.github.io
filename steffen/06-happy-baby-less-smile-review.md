@@ -1,3 +1,5 @@
+Approval update, 14 November 2026: Athif confirmed this exact less-smile version approved. The files and hashes below are unchanged. This records clip approval, not app installation or clinical review.
+
 # Happy Baby: softer smile, 14 November 2026
 
 ## Request and scope
@@ -5,7 +7,7 @@
 Athif supplied Steffen's feedback on the published hold-3s version:
 - 13 Nov 14:08: “Great. But make her smile less.”
 - 13 Nov 14:47: “Thanks. Great work, guys”.
-Athif requested the smile adjustment on 14 Nov. The prior version received positive feedback with this specific correction; the new edit has not yet received separate confirmation.
+Athif requested the smile adjustment on 14 Nov. The prior version received positive feedback with this specific correction; Athif subsequently confirmed this exact new edit approved on 14 Nov.
 
 The female Coach is retained for this explicitly requested smile-only revision. This does not reverse the general male-Coach rule for poses that could appear sexual. No new Veo take, actor swap, movement change or app release.
 
@@ -25,7 +27,7 @@ Same 783-frame mapping, 24 fps, 32.625 seconds and three repetitions as the publ
 - FFmpeg freeze detection measured three 3-second holds in the encoded Coach clip.
 - This is scoped expression/timing verification, not a fresh all-frame anatomical review or app-runtime verification.
 
-Existing movement observations remain: prolonged knees-close phase, late opening, head/shoulder differences from Relatio and sustained closed eyes in part of the movement. The static holds have no added blinks. These were not changed by this request. Stakeholder confirmation of this new expression remains pending; no clinical approval is asserted.
+Existing movement observations remain: prolonged knees-close phase, late opening, head/shoulder differences from Relatio and sustained closed eyes in part of the movement. The static holds have no added blinks. These were not changed by this request. Approval of this exact expression was reported by Athif on 14 Nov; no clinical approval is asserted.
 
 Relatio is on the left in the comparison, Coach on the right. Same reference segment from 6 seconds, native reference speed, phases unsynchronized.
 
