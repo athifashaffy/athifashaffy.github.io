@@ -27,6 +27,10 @@ th{color:var(--mute);font-weight:600}
 img{width:100%;height:auto;border-radius:6px;display:block}
 pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.85rem;margin:0}
 summary{cursor:pointer;font-weight:600}
+.notice{border-left:5px solid #b56a00}
+.controls{display:flex;gap:10px;flex-wrap:wrap}
+button{font:inherit;padding:10px 16px;border:1px solid var(--line);border-radius:6px;cursor:pointer;background:var(--card);color:var(--fg)}
+a{color:var(--accent)}
 h3{font-size:.9rem;margin:12px 0 4px}
 </style>
 </head>
@@ -35,43 +39,53 @@ h3{font-size:.9rem;margin:12px 0 4px}
   <div>
     <h1>34 · Astride jumps</h1>
     <p>Relatio's Astride jumps next to COGITO AI's, shown by the Coach woman. Diagonal front-corner view (~45° to her right front).</p>
-    <p>Both sides together — symmetric jump. 10 repetitions (20 s), then stops.</p>
+    <p>Jana’s recolored v2 · 10 repetitions · 20 seconds · reviewed 19 November 2026.</p>
+  </div>
+  <div class="card notice" role="note">
+    <h2>Needs revision before Steffen’s final review</h2>
+    <p>All 480 Coach frames were inspected against Relatio. The original video is preserved below for an accurate comparison.</p>
+    <details><summary>Frame-review findings</summary>
+    <ul>
+      <li>The top of the hair is clipped at the jump peaks.</li>
+      <li>The wide landing needs Relatio’s knee bend; repeated moving frames also make the motion uneven.</li>
+      <li>The countdown stops at 1 rather than 0.</li>
+    </ul></details>
+    <p>These findings are still open. This page is a review comparison, not approval of the video.</p>
+  </div>
+  <div class="card">
+    <div class="controls"><button id="compare" type="button">Play both from start</button><button id="pause" type="button">Pause both</button></div>
+    <p id="play-status" aria-live="polite">Relatio starts at 0.63 s near the closed stance. Both play at their original speed; the Coach’s 2.00 s cycle is slightly slower than Relatio’s 1.93 s cycle, so they drift apart.</p>
   </div>
   <div class="grid">
     <div class="card">
       <span class="tag">Relatio</span>
       <h2>Astride jumps (Relatio clip)</h2>
-      <video src="https://app.getrelatio.com/storage/courses/10004/19.mp4" controls muted playsinline preload="metadata"></video>
-      <p>Front view. Loops under a countdown.</p>
+      <video poster="relatio-review-poster.jpg" id="relatio" src="https://app.getrelatio.com/storage/courses/10004/19.mp4" controls muted playsinline preload="metadata"></video>
+      <p>Front view. Original 45.9-second reference; the feet are cropped in this source.</p>
     </div>
     <div class="card">
-      <span class="tag">COGITO AI — v1 (cornflower blue)</span>
+      <span class="tag">COGITO AI — recolored v2</span>
       <h2>Astride jumps, Coach woman</h2>
-      <video src="astride-jumps.mp4" controls muted playsinline preload="metadata"></video>
-      <p>Diagonal front-corner view. 10 reps (20 s), then stops.</p>
+      <video poster="recolored-v2-poster.jpg" id="coach" src="astride-jumps-v2-recolored.mp4" controls muted playsinline preload="metadata"></video>
+      <p>Light steel-blue hoodie (#8CA4BB), diagonal front-corner view. 10 reps (20 s), then stops.</p>
+      <p><a href="astride-jumps-v2-recolored.mp4" download>Download recolored v2</a></p>
     </div>
   </div>
-  <div class="grid">
-    <div class="card">
-      <span class="tag">COGITO AI — v2 (recolored #8CA4BB)</span>
-      <h2>Astride jumps, Coach woman — recolored</h2>
-      <video src="astride-jumps-v2-recolored.mp4" controls muted playsinline preload="metadata"></video>
-      <p>Same movement, timing and blinks. Hoodie recolored to light steel blue (#8CA4BB) to match 011/013.</p>
-    </div>
-  </div>
+  <div class="card"><details><summary>Original version</summary><p><a href="astride-jumps.mp4">Watch or download v1 (cornflower-blue hoodie)</a>. Both video files remain unchanged.</p></details></div>
   <div class="card wrap">
     <table>
       <tr><th></th><th>Relatio</th><th>COGITO AI</th></tr>
       <tr><td>Movement</td><td>Astride jumps</td><td>Astride jumps</td></tr>
       <tr><td>Shown by</td><td>Anatomy figure</td><td>Coach woman</td></tr>
       <tr><td>Camera</td><td>Front view</td><td>Diagonal front-corner (~45° to her right front)</td></tr>
-      <tr><td>One rep</td><td>~1.9 s</td><td>2.0 s</td></tr>
-      <tr><td>What plays</td><td>Loops under a countdown</td><td>10 reps (20 s), then stops</td></tr>
+      <tr><td>One rep</td><td>1.933 s (58 frames at 30 fps)</td><td>2.0 s</td></tr>
+      <tr><td>What plays</td><td>45.9-second reference clip</td><td>10 reps (20 s), then stops</td></tr>
       <tr><td>Sides</td><td colspan="2">Both sides together — symmetric. No alternation, no mirroring needed.</td></tr>
     </table>
   </div>
   <div class="card">
-    <details><summary>Pictures and prompts</summary>
+    <details><summary>Original production pictures and prompts</summary>
+      <p>Historical v1 production record. Recolored v2 uses #8CA4BB; the review findings above describe the rendered result.</p>
       <p>Veo 3.1 Fast (half A only) trimmed and assembled into a forward + reverse cycle. Keyframes drawn by Gemini.</p>
       <h3>Start picture</h3><img src="start.png" alt="Coach woman standing upright on mat, feet together, arms at sides, diagonal front-corner view">
       <h3>Peak A picture (feet wide, arms at T)</h3><img src="peak-a.png" alt="Coach woman after hop: feet wide apart, both arms raised to shoulder height forming a T shape">
@@ -84,5 +98,18 @@ h3{font-size:.9rem;margin:12px 0 4px}
     </details>
   </div>
 </main>
+<script>
+const relatio=document.getElementById('relatio'),coach=document.getElementById('coach');
+const status=document.getElementById('play-status');let paired=false;
+function pauseBoth(){relatio.pause();coach.pause();paired=false;}
+document.getElementById('pause').addEventListener('click',pauseBoth);
+document.getElementById('compare').addEventListener('click',async()=>{
+  pauseBoth();relatio.currentTime=19/30;coach.currentTime=0;
+  relatio.playbackRate=1;coach.playbackRate=1;paired=true;
+  try{await Promise.all([relatio.play(),coach.play()]);}
+  catch(e){pauseBoth();status.textContent='Playback could not start. Use each video’s controls or reload the page.';}
+});
+coach.addEventListener('ended',()=>{if(paired)pauseBoth();});
+</script>
 </body>
 </html>
