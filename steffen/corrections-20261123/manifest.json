@@ -1,0 +1,19 @@
+{
+  "007": {
+    "file": "07-cat-cow-male-10-reps.mp4",
+    "sha256": "b908e26c736a04f6483d3c5ea32983bc13a6435d9c9984206e8633f04ae4f84c",
+    "actor": "coach_male",
+    "reps": 10,
+    "fps": 24,
+    "frames": 1680,
+    "seconds": 70,
+    "approval": "pending",
+    "review": "24fps video analysis plus native frame/contact/face review and full 1x automated player test"
+  },
+  "005": {
+    "status": "unfinished; rejected; not published"
+  },
+  "008": {
+    "status": "unfinished; rejected; not published"
+  }
+}
