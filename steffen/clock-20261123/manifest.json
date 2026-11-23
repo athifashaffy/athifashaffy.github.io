@@ -16,16 +16,16 @@
   {
     "id": "02-pelvic-tilt",
     "title": "02 \u00b7 Pelvic tilt",
-    "sha256": "53a9be0c7079e3dcfebd88d2191e639f76120892e2cae3a805879352608320f4",
-    "input_sha256": "b5f0a918caf782e6fe6b848a73246f0659a4614846b731c010dd7b4f797498b2",
+    "sha256": "55533d82c25fb6e6226cdfb0188e4fb62a6f60ba73048935376a65a844246bc0",
+    "input_sha256": "53a9be0c7079e3dcfebd88d2191e639f76120892e2cae3a805879352608320f4",
     "frames": 1430,
     "fps": 24.0,
     "duration_s": 59.583333333333336,
     "repetitions": 10,
     "cycle_frames": 143,
-    "url": "clock-20261123/02-pelvic-tilt-clock-10reps-v2-20261123.mp4",
-    "status": "Clock/count revision \u00b7 approval pending",
-    "poster": "clock-20261123/02-pelvic-tilt-clock-10reps-v2-20261123.png"
+    "url": "corrections-20261123/02-pelvic-tilt-waist-10reps-v3-20261123.mp4",
+    "status": "Waistband corrected; accepted colour, face, blinking, timing and count preserved; review pending",
+    "poster": "corrections-20261123/02-pelvic-tilt-waist-10reps-v3-20261123.png"
   },
   {
     "id": "03-butterfly-flaps",
@@ -86,16 +86,15 @@
   {
     "id": "07-cat-cow",
     "title": "07 \u00b7 Cat-cow",
-    "sha256": "0722e9071258760f8d716578cccff6f8348a8d88ad509c8f15934f336aa6f04a",
-    "input_sha256": "9ce8823fe130ccee7c5547bcedac9b222cc640da177f1b567d04e460d8c2fe1f",
+    "sha256": "b908e26c736a04f6483d3c5ea32983bc13a6435d9c9984206e8633f04ae4f84c",
     "frames": 1680,
     "fps": 24.0,
     "duration_s": 70.0,
     "repetitions": 10,
     "cycle_frames": 168,
-    "url": "clock-20261123/07-cat-cow-clock-10reps-v2-20261123.mp4",
-    "status": "Male Coach replacement required \u2014 movement correction pending",
-    "poster": "clock-20261123/07-cat-cow-clock-10reps-v2-20261123.png"
+    "url": "corrections-20261123/07-cat-cow-male-10-reps.mp4",
+    "status": "Male Coach correction complete; reviewer approval pending",
+    "poster": "corrections-20261123/07-cat-cow-male-10-reps.jpg"
   },
   {
     "id": "08-namaskarasana",

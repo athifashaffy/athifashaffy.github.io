@@ -15,5 +15,15 @@
   },
   "008": {
     "status": "unfinished; rejected; not published"
+  },
+  "002": {
+    "file": "02-pelvic-tilt-waist-10reps-v3-20261123.mp4",
+    "sha256": "55533d82c25fb6e6226cdfb0188e4fb62a6f60ba73048935376a65a844246bc0",
+    "reps": 10,
+    "frames": 1430,
+    "fps": 24,
+    "seconds": 59.583333333333336,
+    "scope": "Waistband colour only; accepted palette, smile, blinking, time and count retained",
+    "approval": "Corrected waistband pending review"
   }
 }
