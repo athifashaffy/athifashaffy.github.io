@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>19 Prisoner high knees – Relatio vs COGITO AI</title>
+<style>
+:root{--bg:#f4f6f9;--card:#fff;--fg:#1d2430;--mute:#5d6878;--line:#dde3ea;--accent:#2f6fd6}
+@media (prefers-color-scheme:dark){:root{--bg:#11161d;--card:#1a212b;--fg:#e6ebf1;--mute:#9aa6b5;--line:#2a3440;--accent:#7aa8ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;padding-block:24px;padding-inline:16px}
+main{max-width:1200px;margin:0 auto;display:grid;gap:20px}
+h1{font-size:1.5rem;margin:0}
+p{margin:0;color:var(--mute);max-width:70ch}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:820px){.grid{grid-template-columns:1fr}h1{font-size:1.3rem}body{padding-block:16px}}
+@media (max-width:480px){table{font-size:.85rem}td,th{padding:6px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;display:grid;gap:8px;align-content:start;min-width:0}
+.card h2{font-size:1rem;margin:0}
+.tag{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600}
+video{width:100%;border-radius:6px;background:#000;aspect-ratio:16/9}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+td,th{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{color:var(--mute);font-weight:600}
+.wrap{overflow-x:auto}
+img{width:100%;height:auto;border-radius:6px;display:block}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.85rem;margin:0}
+summary{cursor:pointer;font-weight:600}
+.controls{display:flex;gap:10px;flex-wrap:wrap}
+button{font:inherit;padding:10px 16px;border:1px solid var(--line);border-radius:6px;cursor:pointer;background:var(--card);color:var(--fg)}
+a{color:var(--accent)}
+h3{font-size:.9rem;margin:12px 0 4px}
+</style>
+</head>
+<body>
+<main>
+  <div>
+    <h1>19 · Prisoner high knees</h1>
+    <p>Relatio's Prisoner high knees next to COGITO AI's, shown by the Coach woman. Slightly elevated near-front view, camera just above head height angled very slightly to her right.</p>
+    <p>r2 candidate · 10 repetitions · 40 seconds · 24 November 2026.</p>
+  </div>
+  <div class="card">
+    <div class="controls"><button id="compare" type="button">Play both from start</button><button id="pause" type="button">Pause both</button></div>
+    <p id="play-status" aria-live="polite">Both play at their original speed.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <span class="tag">Relatio</span>
+      <h2>Prisoner high knees (Relatio clip)</h2>
+      <video id="relatio" src="https://app.getrelatio.com/storage/courses/10004/07.mp4" controls muted playsinline preload="metadata"></video>
+      <p>Original Relatio reference clip.</p>
+    </div>
+    <div class="card">
+      <span class="tag">COGITO AI — r2 candidate</span>
+      <h2>Prisoner high knees, Coach woman</h2>
+      <video poster="poster.jpg" id="coach" src="prisoner-high-knees.mp4" controls muted playsinline preload="metadata"></video>
+      <p>Light steel-blue hoodie (#8CA4BB). 10 reps (40 s), then stops. Forward + reverse cycle, mouth smile patch, eye blink.</p>
+      <p><a href="prisoner-high-knees.mp4" download>Download video</a></p>
+    </div>
+  </div>
+  <div class="card wrap">
+    <table>
+      <tr><th></th><th>Relatio</th><th>COGITO AI</th></tr>
+      <tr><td>Movement</td><td>Prisoner high knees</td><td>Prisoner high knees</td></tr>
+      <tr><td>Shown by</td><td>Anatomy figure</td><td>Coach woman</td></tr>
+      <tr><td>Camera</td><td>Front view</td><td>Slightly elevated near-front, angled very slightly to her right</td></tr>
+      <tr><td>One rep</td><td>~3.88 s</td><td>~4.0 s (22 frames at 5.5 fps)</td></tr>
+      <tr><td>What plays</td><td>Full Relatio reference</td><td>10 reps (40 s), then stops</td></tr>
+      <tr><td>Clothing</td><td>Anatomy figure</td><td>Light steel-blue hoodie #8CA4BB, grey joggers, grey/orange sneakers</td></tr>
+      <tr><td>SHA-256</td><td>—</td><td><code>2f46592202cb569b459fdf95686b9772b10827313b955523a1e8978a329aae46</code></td></tr>
+    </table>
+  </div>
+</main>
+<script>
+const relatio=document.getElementById('relatio'),coach=document.getElementById('coach');
+const status=document.getElementById('play-status');let paired=false;
+function pauseBoth(){relatio.pause();coach.pause();paired=false;}
+document.getElementById('pause').addEventListener('click',pauseBoth);
+document.getElementById('compare').addEventListener('click',async()=>{
+  pauseBoth();relatio.currentTime=0;coach.currentTime=0;
+  relatio.playbackRate=1;coach.playbackRate=1;paired=true;
+  try{await Promise.all([relatio.play(),coach.play()]);}
+  catch(e){pauseBoth();status.textContent='Playback could not start. Use each video\'s controls or reload the page.';}
+});
+coach.addEventListener('ended',()=>{if(paired)pauseBoth();});
+</script>
+</body>
+</html>
