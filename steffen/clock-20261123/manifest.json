@@ -98,16 +98,16 @@
   {
     "id": "08-namaskarasana",
     "title": "08 \u00b7 Namaskarasana",
-    "sha256": "04a1129c467ac8b3a420723d1b40130ec3c4c166e258f982e3504b5d9b1a22d7",
+    "sha256": "c438a5c48fe3bcbcf40e1d2c44f77f83fa5b80ffa70cdbc6dad7c20e39203e8c",
     "input_sha256": "6ffac2960fe39b02ddb1cc3fc3819ef97d137d1b415074c7b8bb32486daf7405",
     "frames": 1490,
-    "fps": 30.0,
-    "duration_s": 49.666666666666664,
+    "fps": 29.97002997002997,
+    "duration_s": 49.71633333333333,
     "repetitions": 10,
     "cycle_frames": 149,
-    "url": "clock-20261123/08-namaskarasana-clock-10reps-v2-20261123.mp4",
-    "status": "Continuous elbow\u2013knee contact required \u2014 movement correction pending",
-    "poster": "clock-20261123/08-namaskarasana-clock-10reps-v2-20261123.png"
+    "url": "feedback-fixes-20261123/08-namaskarasana-contact-10reps-v2-20261123.mp4",
+    "status": "Elbow contact corrected \u00b7 awaiting review",
+    "poster": "feedback-fixes-20261123/08-namaskarasana-contact-10reps-v2-20261123.jpg"
   },
   {
     "id": "09-boat-stretch",
