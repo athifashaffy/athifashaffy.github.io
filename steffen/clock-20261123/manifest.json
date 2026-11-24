@@ -58,15 +58,15 @@
   {
     "id": "05-bridge-abduction",
     "title": "05 \u00b7 Bridge hip abduction",
-    "sha256": "660a2ef32b1585455ada1370e8a9e5159bf0f753a5c53a4cbe2cae4b1d417b03",
+    "sha256": "7995e25811564843ce56556b3f35cc6a8dbdffd9cf52282ea977493c0e8ad2c7",
     "frames": 890,
     "fps": 24,
     "duration_s": 37.083333333333336,
     "repetitions": 10,
     "cycle_frames": 89,
-    "url": "feedback-fixes-20261123/05-bridge-abduction-lateral-arms-10reps-v5-20261123.mp4",
-    "status": "Arm placement corrected \u00b7 awaiting review",
-    "poster": "feedback-fixes-20261123/05-bridge-abduction-lateral-arms-10reps-v5-20261123.jpg"
+    "url": "feedback-fixes-20261124/05-bridge-abduction-shoulder-line-10reps-v6-20261124.mp4",
+    "status": "Hand positions revised \u00b7 awaiting review",
+    "poster": "feedback-fixes-20261124/05-bridge-abduction-shoulder-line-10reps-v6-20261124.jpg"
   },
   {
     "id": "06-happy-baby",
